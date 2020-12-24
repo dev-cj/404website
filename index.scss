@@ -1,0 +1,201 @@
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.maxBody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f5f1;
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    .heading {
+      padding-left: 6%;
+      font-size: 2rem;
+      @include mobile {
+        margin: unset;
+        margin-top: 1rem;
+      }
+    }
+    .landing {
+      display: flex;
+      flex-direction: column;
+      background-color: #f9f5f1;
+      height: 100vh;
+      width: 100%;
+      // justify-content: center;
+      @include mobile {
+        // margin-top: 10%;
+        height: 90vh;
+        min-height: 800px;
+      }
+
+      .landing-top {
+        display: flex;
+        height: 74%;
+        align-items: center;
+        @include mobile {
+          height: auto;
+          flex-direction: column;
+        }
+        .left {
+          width: 50%;
+          padding: 6%;
+          @include mobile {
+            width: 90%;
+          }
+          span {
+            font-size: 1.4rem;
+          }
+        }
+
+        .right {
+          width: 50%;
+          @include mobile {
+            display: flex;
+            width: 90%;
+            justify-content: center;
+          }
+
+          .mobileImage {
+            width: 60%;
+          }
+        }
+      }
+      .landing-bottom {
+        display: flex;
+        width: 100%;
+        height: 18%;
+        align-items: center;
+        justify-content: center;
+
+        .know-more {
+          color: #fff !important;
+          text-transform: uppercase;
+          text-decoration: none;
+          background: #ed3330;
+          padding: 20px;
+          border-radius: 5px;
+          display: inline-block;
+          border: none;
+          transition: all 0.4s ease 0s;
+
+          &:hover {
+            background: #434343;
+            letter-spacing: 1px;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+            box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+            transition: all 0.4s ease 0s;
+          }
+        }
+      }
+    }
+    .about {
+      background-color: #f9f5f1;
+      height: 90vh;
+      width: 100%;
+
+      .about-top {
+        display: flex;
+        height: 90%;
+        align-items: center;
+        @include mobile {
+          height: auto;
+          flex-direction: column;
+        }
+        .left {
+          width: 50%;
+          display: flex;
+          justify-content: center;
+          @include mobile {
+            display: flex;
+            width: 90%;
+            justify-content: center;
+          }
+          .mobileImage {
+            width: 60%;
+          }
+        }
+
+        .right {
+          width: 50%;
+          padding: 6%;
+          @include mobile {
+            width: 90%;
+          }
+          span {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    .contact {
+      background-color: #f9f5f1;
+      width: 100%;
+      @include mobile {
+        height: 100%;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        .getInTouch {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+        }
+        .text {
+          display: flex;
+          justify-content: center;
+          span {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            @include mobile {
+              font-size: 1.3rem;
+            }
+          }
+        }
+        .subscribeParent {
+          .subscribe {
+            display: flex;
+            justify-content: center;
+            .cta {
+              padding: 13px 24px;
+              color: #ffffff;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 24px;
+              border: 0;
+              border-radius: 5px;
+              background-color: #7ec954;
+              transition-property: all;
+              transition-duration: 0.15s;
+              transition-timing-function: ease-in-out;
+            }
+            .cta :hover {
+              background-color: #9bd57b;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+body {
+  width: 100%;
+  margin: 0;
+  width: 100vw;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.maxBody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f5f1;
+}
+.maxBody .parent {
+  display: flex;
+  flex-direction: column;
+  max-width: 1920px;
+}
+.maxBody .parent .heading {
+  padding-left: 6%;
+  font-size: 2rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .heading {
+    margin: unset;
+    margin-top: 1rem;
+  }
+}
+.maxBody .parent .landing {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f5f1;
+  height: 100vh;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .landing {
+    height: 90vh;
+    min-height: 800px;
+  }
+}
+.maxBody .parent .landing .landing-top {
+  display: flex;
+  height: 74%;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .landing .landing-top {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.maxBody .parent .landing .landing-top .left {
+  width: 50%;
+  padding: 6%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .landing .landing-top .left {
+    width: 90%;
+  }
+}
+.maxBody .parent .landing .landing-top .left span {
+  font-size: 1.4rem;
+}
+.maxBody .parent .landing .landing-top .right {
+  width: 50%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .landing .landing-top .right {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+}
+.maxBody .parent .landing .landing-top .right .mobileImage {
+  width: 60%;
+}
+.maxBody .parent .landing .landing-bottom {
+  display: flex;
+  width: 100%;
+  height: 18%;
+  align-items: center;
+  justify-content: center;
+}
+.maxBody .parent .landing .landing-bottom .know-more {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ed3330;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+.maxBody .parent .landing .landing-bottom .know-more:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+.maxBody .parent .about {
+  background-color: #f9f5f1;
+  height: 90vh;
+  width: 100%;
+}
+.maxBody .parent .about .about-top {
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .about .about-top {
+    height: auto;
+    flex-direction: column;
+  }
+}
+.maxBody .parent .about .about-top .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .about .about-top .left {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+  }
+}
+.maxBody .parent .about .about-top .left .mobileImage {
+  width: 60%;
+}
+.maxBody .parent .about .about-top .right {
+  width: 50%;
+  padding: 6%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .about .about-top .right {
+    width: 90%;
+  }
+}
+.maxBody .parent .about .about-top .right span {
+  font-size: 1.4rem;
+}
+.maxBody .parent .contact {
+  background-color: #f9f5f1;
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .contact {
+    height: 100%;
+  }
+}
+.maxBody .parent .contact .container {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+.maxBody .parent .contact .container .getInTouch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.maxBody .parent .contact .container .text {
+  display: flex;
+  justify-content: center;
+}
+.maxBody .parent .contact .container .text span {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .contact .container .text span {
+    font-size: 1.3rem;
+  }
+}
+.maxBody .parent .contact .container .subscribeParent .subscribe {
+  display: flex;
+  justify-content: center;
+}
+.maxBody .parent .contact .container .subscribeParent .subscribe .cta {
+  padding: 13px 24px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  border: 0;
+  border-radius: 5px;
+  background-color: #7ec954;
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+.maxBody .parent .contact .container .subscribeParent .subscribe .cta :hover {
+  background-color: #9bd57b;
+}
+
+/*# sourceMappingURL=index.css.map */
