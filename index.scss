@@ -31,11 +31,35 @@ body {
         margin-top: 1rem;
       }
     }
+    .landingHeading {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      height: 13vh;
+      align-items: flex-end;
+
+      div {
+        width: 70%;
+      }
+      span {
+        font-size: 1.5rem;
+      }
+      @include mobile {
+        height: unset;
+        margin-top: 1rem;
+        div {
+          width: 80%;
+        }
+        span {
+          font-size: 1.3rem;
+        }
+      }
+    }
     .landing {
       display: flex;
       flex-direction: column;
       background-color: #f9f5f1;
-      height: 100vh;
+      height: 87vh;
       width: 100%;
       // justify-content: center;
       @include mobile {
@@ -46,7 +70,7 @@ body {
 
       .landing-top {
         display: flex;
-        height: 74%;
+        height: 70%;
         align-items: center;
         @include mobile {
           height: auto;
@@ -59,6 +83,9 @@ body {
             width: 90%;
           }
           span {
+            font-size: 1.4rem;
+          }
+          li {
             font-size: 1.4rem;
           }
         }
@@ -153,7 +180,7 @@ body {
       .container {
         display: flex;
         flex-direction: column;
-        height: 40vh;
+        // height: 40vh;
         .getInTouch {
           display: flex;
           align-items: center;

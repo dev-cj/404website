@@ -27,11 +27,36 @@ body {
     margin-top: 1rem;
   }
 }
+.maxBody .parent .landingHeading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  height: 13vh;
+  align-items: flex-end;
+}
+.maxBody .parent .landingHeading div {
+  width: 70%;
+}
+.maxBody .parent .landingHeading span {
+  font-size: 1.5rem;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .maxBody .parent .landingHeading {
+    height: unset;
+    margin-top: 1rem;
+  }
+  .maxBody .parent .landingHeading div {
+    width: 80%;
+  }
+  .maxBody .parent .landingHeading span {
+    font-size: 1.3rem;
+  }
+}
 .maxBody .parent .landing {
   display: flex;
   flex-direction: column;
   background-color: #f9f5f1;
-  height: 100vh;
+  height: 87vh;
   width: 100%;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -42,7 +67,7 @@ body {
 }
 .maxBody .parent .landing .landing-top {
   display: flex;
-  height: 74%;
+  height: 70%;
   align-items: center;
 }
 @media (min-width: 320px) and (max-width: 767px) {
@@ -61,6 +86,9 @@ body {
   }
 }
 .maxBody .parent .landing .landing-top .left span {
+  font-size: 1.4rem;
+}
+.maxBody .parent .landing .landing-top .left li {
   font-size: 1.4rem;
 }
 .maxBody .parent .landing .landing-top .right {
@@ -157,7 +185,6 @@ body {
 .maxBody .parent .contact .container {
   display: flex;
   flex-direction: column;
-  height: 40vh;
 }
 .maxBody .parent .contact .container .getInTouch {
   display: flex;
